@@ -1,0 +1,16 @@
+1>Layout - change the metadata
+2>Create a folder name hello and a file called "page.tsx"
+3>Create a not-found file as well
+4>Loading page
+5>Error Page (has to be a client component)
+6>Bootstrap uses client cpmponent so we have to keep it in the component folder
+7>We can pass server component as props . For such case we have to create component folder in src folder and we need o use client on the component folder only so, that out main component can be server component
+8>If we want to make any server componrnt client than we need to use "use client".
+9>From "next/navigation"
+i>useRouter(This is used basically to navigate between the pages )
+ii>usePathName(This is used to detect the path...eg:-"/hello")
+iii>useSearchParams(This is used to detect the search item ...eg:- the remaining things in url after "?") 
+10>In Next JS we do use .env.local instead of .env (we use .env in next for storing basic config files and for secret keys we use .env.local)
+11>On static, the image will get cache and it will give same image in production mode and th image will be same for all. But if it is not in production mode and it is in development mode than it will show different image on hot reloading (ctrl+downkey+f5)
+   On static it will only fetch the data at the compile time.
+12>We are woking on React Query
