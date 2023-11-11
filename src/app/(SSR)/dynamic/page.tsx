@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import { unplashImage } from "@/models/unsplashImage";
+import { UnplashImage } from "@/models/unsplashImage";
 import { Alert } from "@/components/bootstrap";
 import Link from "next/link";
 import { deflate } from "zlib";
