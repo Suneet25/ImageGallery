@@ -3,8 +3,8 @@
 import { UnplashImage } from "@/models/unsplashImage";
 import Image from "next/image";
 import { useState } from "react";
-import { Button, Form, Spinner } from "react-bootstrap";
-import  styles  from "./SearchPage.module.css";
+import { Alert, Button, Form, Spinner } from "react-bootstrap";
+import styles from "./SearchPage.module.css";
 
 const SearchPage = () => {
   let [searchInput, setSearchInput] = useState("");
@@ -32,6 +32,13 @@ const SearchPage = () => {
 
   return (
     <div>
+      <Alert>
+        This page fetches data <strong>client-side</strong>.In order to not leak
+        the API credentals, the request is sent to Next JS{" "}
+        <strong>route handler</strong> that returns on the server.This route
+        handler than fetches the data from the Unsplsh API and returns it to the
+        client.
+      </Alert>
       <Form onSubmit={handleSubmit}>
         <Form.Group className="mb-3" controlId="search-input">
           <Form.Label>Search Query</Form.Label>
